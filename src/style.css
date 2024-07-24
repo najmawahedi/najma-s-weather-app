@@ -116,8 +116,8 @@ div {
 }
 
 .thecity {
-  font-weight: 800;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 35px;
   text-align: left;
 }
 
@@ -156,10 +156,11 @@ footer {
   position: relative;
   top: 20px;
   font-size: 60px;
+  left: 55px;
 }
 .condition {
   position: relative;
-  right: 240px;
+  right: 190px;
   top: 10px;
 }
 .degree {

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +21,7 @@
   </head>
   <body class="backimg">
     <h1>Weather Forecast</h1>
-    <form>
+    <form id="searchForm">
       <div id="searchContainer">
         <input
           id="textcity"
@@ -36,7 +37,7 @@
       <h2 id="dailycity">Daily forecast</h2>
       <div class="todayforecast">
         <div class="thecity">
-          <strong>Kabul</strong> <br />
+          <span id="thecity"><strong>NEW YORK</strong> </span><br />
           <div class="date">
             Friday,
             <span>24 May, 2024</span>
@@ -45,13 +46,16 @@
         <div class="icon">☀</div>
         <div>
           <div class="degree">
-            <img src="src/thermometer (1).png" width="30px" alt="" />26°c
+            <img src="src/thermometer (1).png" width="30px" alt="" />
+            <span id="spcdegree">26</span>°c
           </div>
-          <div class="moist">Moist:50%</div>
-          <div class="condition">Sunny</div>
+          <div class="moist">Moist: <span id="moist">50</span>%</div>
+          <div class="condition" id="condition">Sunny</div>
         </div>
         <div>
-          <div class="windspeed">Windspeed:4km/h</div>
+          <div class="windspeed">
+            Windspeed: <span id="windspeed">4</span> km/h
+          </div>
           <div class="high">
             <img src="src/hot (1).png" width="30px" alt="" />High: 19.16
           </div>
@@ -117,5 +121,6 @@
         >Netlify</a
       >
     </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
