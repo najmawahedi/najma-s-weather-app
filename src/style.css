@@ -4,6 +4,7 @@ body {
   padding: 0;
   line-height: 1.3;
 }
+
 h2 {
   font-weight: 900;
   font-size: 30px;
@@ -15,6 +16,16 @@ form input,
   font-family: "Courier New", Courier, monospace;
   text-align: left;
   margin-top: 3px;
+  margin-bottom: 0;
+}
+
+.thecity {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.headingtwo {
+  margin-bottom: 25px;
 }
 
 .backimg {
@@ -22,20 +33,23 @@ form input,
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 h1 {
   color: rgb(95, 91, 91);
   font-family: "Courier New", Courier, monospace;
-
   width: 50%;
   text-align: center;
   margin: 10px auto 8px;
   padding: 8px 8px;
   border-radius: 5px;
+  font-weight: 900;
 }
+
 .icon {
   margin-top: 0;
-  font-size: 55px;
+  font-size: 65px;
 }
+
 #textcity {
   border: solid rgba(97, 95, 95, 0.603) 1px;
   background-color: rgba(255, 255, 255, 0.692);
@@ -45,12 +59,14 @@ h1 {
   color: black;
   padding: 6px 5px;
 }
+
 #searchContainer {
   display: block;
   margin: 0 auto;
   text-align: center;
   font-size: 18px;
 }
+
 #formsubmit {
   border: solid rgba(97, 95, 95, 0.603) 1px;
   background-color: rgba(255, 255, 255, 0.664);
@@ -63,55 +79,52 @@ h1 {
   box-shadow: inset 5px 2px 5px rgb(189, 187, 187);
   font-weight: 900;
 }
+
 #formsubmit:hover {
   color: white;
   background-color: rgba(0, 0, 0, 0.76);
 }
+
 #bodyContainer {
   background-color: rgba(255, 255, 255, 0.753);
   margin: 20px auto 10px;
   border-radius: 8px;
-  padding: 10px 50px 50px 30px;
+  padding: 20px 20px 0 20px;
   box-shadow: inset 5px 4px 20px gray;
-  width: 800px;
+  width: 950px;
+  height: 450px;
   text-align: center;
   display: block;
 }
+
+.date {
+  font-size: 12px;
+}
+
 div {
   font-family: "Eczar", monospace, serif;
   font-optical-sizing: auto;
   font-weight: 450;
 }
+
 .todayforecast {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  text-align: left;
 }
-.fivedays {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  text-align: center;
-  width: 80;
-}
-.saturday {
-  border-right: solid 1px gray;
-}
-.sunday {
-  border-right: solid 1px gray;
-}
-.monday {
-  border-right: solid 1px gray;
-}
-.tuesday {
-  border-right: solid 1px gray;
-}
+
 .thecity {
-  font-weight: 900;
+  font-weight: 800;
   font-size: 40px;
+  text-align: left;
 }
+
 .icone {
   font-size: 40px;
 }
+
 footer {
   text-align: center;
   color: rgb(230, 230, 230);
@@ -120,9 +133,69 @@ footer {
   font-family: "Oleo Script", system-ui;
   font-weight: 400;
 }
+
 .link {
   color: rgb(6, 6, 77);
 }
+
 .link:hover {
   color: rgb(207, 71, 71);
+}
+
+.fivedays {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-align: center;
+}
+.icon {
+  position: relative;
+  top: 20px;
+  font-size: 60px;
+}
+.condition {
+  position: relative;
+  right: 240px;
+  top: 10px;
+}
+.degree {
+  position: relative;
+  font-size: 28px;
+  top: 20px;
+  font-weight: 600;
+  right: 5px;
+}
+.moist {
+  position: relative;
+  top: 40px;
+  font-size: 14px;
+}
+.windspeed,
+.high,
+.low {
+  font-size: 14px;
+}
+.low {
+  position: relative;
+  right: 8px;
+}
+.saturday,
+.sunday,
+.monday,
+.tuesday {
+  border-right: solid 1px gray;
+  padding-right: 20px;
+}
+
+.condition,
+.degree,
+.moist,
+.windspeed,
+.high,
+.low {
+  margin: 10px 0;
 }

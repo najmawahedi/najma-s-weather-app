@@ -33,26 +33,35 @@
       </div>
     </form>
     <div id="bodyContainer">
-      <h2>Daily forecast</h2>
+      <h2 id="dailycity">Daily forecast</h2>
       <div class="todayforecast">
-        <div class="thecity"><strong>Kabul</strong></div>
+        <div class="thecity">
+          <strong>Kabul</strong> <br />
+          <div class="date">
+            Friday,
+            <span>24 May, 2024</span>
+          </div>
+        </div>
         <div class="icon">☀</div>
         <div>
-          50% <br />
-          Moist
+          <div class="degree">
+            <img src="src/thermometer (1).png" width="30px" alt="" />26°c
+          </div>
+          <div class="moist">Moist:50%</div>
+          <div class="condition">Sunny</div>
         </div>
         <div>
-          Friday
-          <div>24 May, 2024</div>
-        </div>
-        <div>Sunny</div>
-        <div>
-          4km/h <br />
-          Windspeed
+          <div class="windspeed">Windspeed:4km/h</div>
+          <div class="high">
+            <img src="src/hot (1).png" width="30px" alt="" />High: 19.16
+          </div>
+          <div class="low">
+            <img src="src/cold.png" width="30px" alt="" /> Low: 27.95
+          </div>
         </div>
       </div>
       <hr />
-      <h2>Five days forecast</h2>
+      <h2 class="headingtwo">Five days forecast</h2>
       <div class="fivedays">
         <div class="saturday">
           <div><strong>Saturday </strong></div>
@@ -86,7 +95,7 @@
           <div>Moist: 80%</div>
           <div>Windspeed:6km/h</div>
         </div>
-        <div class="wednesay">
+        <div class="wednesday">
           <div><strong>Wednesday</strong></div>
           <div class="icone">☀</div>
           <div>33°c</div>
