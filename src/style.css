@@ -160,14 +160,15 @@ footer {
 }
 .condition {
   position: relative;
-  right: 190px;
+  right: 180px;
   top: 10px;
 }
 .degree {
   position: relative;
-  font-size: 28px;
+  font-size: 30px;
   top: 20px;
-  font-weight: 600;
+  font-weight: 800;
+  line-height: 2;
   right: 5px;
 }
 .moist {
@@ -199,4 +200,7 @@ footer {
 .high,
 .low {
   margin: 10px 0;
+}
+#time {
+  font-size: medium;
 }

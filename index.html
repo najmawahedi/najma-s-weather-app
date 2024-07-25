@@ -29,6 +29,7 @@
           placeholder="Search your city"
           required
           autofocus
+          autocomplete="additional-name"
         />
         <button id="formsubmit" type="submit" value="search">Search</button>
       </div>
@@ -38,23 +39,29 @@
       <div class="todayforecast">
         <div class="thecity">
           <span id="thecity"><strong>NEW YORK</strong> </span><br />
-          <div class="date">
-            Friday,
-            <span>24 May, 2024</span>
-          </div>
+          <div class="date" id="timee">Friday, 24 May, 2024</div>
+          <div id="time">12:23</div>
         </div>
-        <div class="icon">☀</div>
+        <div class="icon" id="icon">
+          <img
+            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+            width="80px"
+            alt=""
+          />
+        </div>
         <div>
           <div class="degree">
             <img src="src/thermometer (1).png" width="30px" alt="" />
             <span id="spcdegree">26</span>°c
           </div>
-          <div class="moist">Moist: <span id="moist">50</span>%</div>
-          <div class="condition" id="condition">Sunny</div>
+          <div class="moist">
+            Humidity: <strong><span id="moist">50</span>%</strong>
+          </div>
+          <div class="condition" id="condition">clear sky</div>
         </div>
         <div>
           <div class="windspeed">
-            Windspeed: <span id="windspeed">4</span> km/h
+            Windspeed: <strong><span id="windspeed">4</span> km/h</strong>
           </div>
           <div class="high">
             <img src="src/hot (1).png" width="30px" alt="" />High: 19.16
@@ -71,7 +78,7 @@
           <div><strong>Saturday </strong></div>
           <div class="icone">☀</div>
           <div>33°c</div>
-          <div>Sunny</div>
+          <div>clear sky</div>
           <div>Moist: 40%</div>
           <div>Windspeed:9km/h</div>
         </div>
