@@ -80,3 +80,9 @@ function cityname(event) {
   thecity.innerHTML = cityelement.value;
   citysearch(cityelement.value);
 }
+
+function forecast(city) {
+  let forecastapi = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=9d0d4df38e762b48ade23c7aefo5tbbd&units=metric`;
+  console.log(forecastapi);
+}
+forecast("paris");
