@@ -39,7 +39,7 @@ h1 {
   font-family: "Courier New", Courier, monospace;
   width: 50%;
   text-align: center;
-  margin: 10px auto 8px;
+  margin: 3px auto 8px;
   padding: 8px 8px;
   border-radius: 5px;
   font-weight: 900;
@@ -89,7 +89,7 @@ h1 {
   background-color: rgba(255, 255, 255, 0.753);
   margin: 20px auto 10px;
   border-radius: 8px;
-  padding: 20px 20px 5px 20px;
+  padding: 15px 20px 15px 20px;
   box-shadow: inset 5px 4px 20px gray;
   width: 950px;
   height: 450px;
@@ -140,6 +140,14 @@ footer {
 
 .link:hover {
   color: rgb(207, 71, 71);
+}
+.cfirst {
+  font-size: 18px;
+  vertical-align: super;
+}
+.c {
+  font-size: 10px;
+  vertical-align: super;
 }
 #firstdaytemplow,
 #fifthdaytemplow,
@@ -210,7 +218,8 @@ img {
 .secondday,
 .thirdday,
 .forthday {
-  border-right: solid 1px gray;
+  border-right: solid 1px #9a9a9a;
+  box-shadow: solid 3px 3px 3px rgba(255, 255, 255, 0.733);
   padding-right: 20px;
 }
 
