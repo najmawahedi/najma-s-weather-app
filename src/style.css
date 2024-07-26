@@ -89,7 +89,7 @@ h1 {
   background-color: rgba(255, 255, 255, 0.753);
   margin: 20px auto 10px;
   border-radius: 8px;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 5px 20px;
   box-shadow: inset 5px 4px 20px gray;
   width: 950px;
   height: 450px;
@@ -141,11 +141,28 @@ footer {
 .link:hover {
   color: rgb(207, 71, 71);
 }
-
+#firstdaytemplow,
+#fifthdaytemplow,
+#forthdaytemplow,
+#thirddaytemplow,
+#seconddaytemplow {
+  color: rgb(40, 24, 109);
+}
+#firstdaytemphigh,
+#fifthdaytemphigh,
+#forthdaytemphigh,
+#thirdaytemphigh,
+#seconddaytemphigh {
+  color: rgb(129, 2, 2);
+}
 .fivedays {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  line-height: 1.1;
   gap: 25px;
+  margin: 0;
+  font-size: 14px;
+  color: rgb(53, 51, 51);
 
   width: 95%;
   margin: 0 auto;
@@ -160,7 +177,7 @@ footer {
 }
 .condition {
   position: relative;
-  right: 180px;
+  right: 170px;
   top: 10px;
 }
 .degree {
@@ -176,6 +193,10 @@ footer {
   top: 40px;
   font-size: 14px;
 }
+img {
+  margin: 0;
+  padding: 0;
+}
 .windspeed,
 .high,
 .low {
@@ -185,10 +206,10 @@ footer {
   position: relative;
   right: 8px;
 }
-.saturday,
-.sunday,
-.monday,
-.tuesday {
+.firstday,
+.secondday,
+.thirdday,
+.forthday {
   border-right: solid 1px gray;
   padding-right: 20px;
 }

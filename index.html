@@ -38,14 +38,13 @@
       <h2 id="dailycity">Daily forecast</h2>
       <div class="todayforecast">
         <div class="thecity">
-          <span id="thecity"><strong>NEW YORK</strong> </span><br />
+          <span id="thecity"><strong>Kabul</strong> </span><br />
           <div class="date" id="timee">Friday, 24 May, 2024</div>
-          <div id="time">12:23</div>
         </div>
         <div class="icon" id="icon">
           <img
             src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
-            width="80px"
+            width="100px"
             alt=""
           />
         </div>
@@ -57,62 +56,118 @@
           <div class="moist">
             Humidity: <strong><span id="moist">50</span>%</strong>
           </div>
-          <div class="condition" id="condition">clear sky</div>
+          <div class="condition" id="condition">Clear sky</div>
         </div>
         <div>
           <div class="windspeed">
             Windspeed: <strong><span id="windspeed">4</span> km/h</strong>
           </div>
           <div class="high">
-            <img src="src/hot (1).png" width="30px" alt="" />High: 19.16
+            <img src="src/hot (1).png" width="30px" alt="" />High:
+            <strong><span id="high"> 19.16</span>°c</strong>
           </div>
           <div class="low">
-            <img src="src/cold.png" width="30px" alt="" /> Low: 27.95
+            <img src="src/cold.png" width="30px" alt="" /> Low:
+            <strong> <span id="low">27.95</span></strong
+            >°c
           </div>
         </div>
       </div>
       <hr />
       <h2 class="headingtwo">Five days forecast</h2>
       <div class="fivedays">
-        <div class="saturday">
-          <div><strong>Saturday </strong></div>
-          <div class="icone">☀</div>
-          <div>33°c</div>
-          <div>clear sky</div>
-          <div>Moist: 40%</div>
-          <div>Windspeed:9km/h</div>
+        <div class="firstday">
+          <div class="firstdayname">
+            <strong id="firstdayname">Saturday </strong>
+          </div>
+          <div class="icone" id="firstdayicon">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+              alt=""
+              width="70px"
+            />
+          </div>
+          <div id="firstdaycondition">Broken clouds</div>
+          <div>
+            <span id="firstdaytemphigh">26</span>°c <span> </span>
+            <span id="firstdaytemplow"> 23</span>°c
+          </div>
+
+          <div>Moist: <span id="firstdaymoist">40</span>%</div>
+          <div>Windspeed: <span id="firstdaywindspeed">9</span>km/h</div>
         </div>
-        <div class="sunday">
-          <div><strong>Sunday</strong></div>
-          <div class="icone">🌥</div>
-          <div>33°c</div>
-          <div>Sunny</div>
-          <div>Moist: 60%</div>
-          <div>Windspeed:3km/h</div>
+        <div class="secondday">
+          <div><strong id="seconddayname">Sunday</strong></div>
+          <div class="icone" id="seconddayicon">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+              alt=""
+              width="70px"
+            />
+          </div>
+          <div id="seconddaycondition">Light rain</div>
+          <div>
+            <span id="seconddaytemphigh"> 26</span>°c <span> </span>
+            <span> <span id="seconddaytemplow"> 17</span></span
+            >°c
+          </div>
+
+          <div>Moist: <span id="seconddaymoist"> 60</span>%</div>
+          <div>Windspeed: <span id="seconddaywindspeed"> 3</span>km/h</div>
         </div>
-        <div class="monday">
-          <div><strong>Monday</strong></div>
-          <div class="icone">🌧</div>
-          <div>33°c</div>
-          <div>Sunny</div>
-          <div>Moist: 90%</div>
-          <div>Windspeed:3km/h</div>
+        <div class="thirdday">
+          <div><strong id="thirddayname">Monday</strong></div>
+          <div class="icone" id="thirddayicon">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
+              alt=""
+              width="70px"
+            />
+          </div>
+          <div id="thirddaycondition">Scattered clouds</div>
+          <div>
+            <span id="thirdaytemphigh">29</span>°c <span> </span>
+            <span id="thirddaytemplow"> 18</span>°c
+          </div>
+
+          <div>Moist: <span id="thirddaymoist">90</span>%</div>
+          <div>Windspeed: <span id="thirddaywindspeed">3</span>km/h</div>
         </div>
-        <div class="tuesday">
-          <div><strong>Tuesday</strong></div>
-          <div class="icone">☁</div>
-          <div>33°c</div>
-          <div>Sunny</div>
-          <div>Moist: 80%</div>
-          <div>Windspeed:6km/h</div>
+        <div class="forthday">
+          <div><strong id="forthdayname">Tuesday</strong></div>
+          <div class="icone" id="forthdayicon">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              alt=""
+              width="70px"
+            />
+          </div>
+          <div id="forthdaycondition">Clear sky</div>
+          <div>
+            <span id="forthdaytemphigh">30</span>°c <span> </span>
+            <span id="forthdaytemplow"> 20</span>°c
+          </div>
+
+          <div>Moist: <span id="forthdaymoist">80</span>%</div>
+          <div>Windspeed: <span id="forthdaywindspeed">6</span>km/h</div>
         </div>
-        <div class="wednesday">
-          <div><strong>Wednesday</strong></div>
-          <div class="icone">☀</div>
-          <div>33°c</div>
-          <div>Sunny</div>
-          <div>Moist: 60%</div>
-          <div>Windspeed:8km/h</div>
+        <div class="fifthday">
+          <div><strong id="fifthdayname">Wednesday</strong></div>
+          <div class="icone" id="fifthdayicon">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              alt=""
+              width="70px"
+            />
+          </div>
+          <div id="fifthdaycondition">Clear sky</div>
+          <div>
+            <span id="fifthdaytemphigh">33</span>°c <span> </span>
+            <span id="fifthdaytemplow"> 28</span>°c
+          </div>
+
+          <div>Moist: <span id="fifthdaymoist">60</span>%</div>
+          <div>Windspeed: <span id="fifthdaywindspeed">8</span>km/h</div>
         </div>
       </div>
     </div>
